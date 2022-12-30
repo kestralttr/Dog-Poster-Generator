@@ -21,7 +21,9 @@ This app uses the following technologies and patterns:
 - Extensive testing by way of Jest & React Testing Library
 - Responsive design across mobile & desktop
 
-## Instruction to run
+## Instructions to run
+
+### Don't forget to run `npm install` prior to running any other scripts!
 
 ### `npm start`
 
