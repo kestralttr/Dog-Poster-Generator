@@ -11,7 +11,7 @@ import {
     addRow,
     fetchRowImageUrls
 } from '../redux/reducers/dogSlice.js'
-import { Typography, Box, Button } from '@mui/material'
+import { Typography, Box } from '@mui/material'
 import './DropdownContainer.js'
 
 const Row = ({
@@ -74,7 +74,6 @@ const Row = ({
                 backgroundColor: '#fff',
                 borderRadius: '8px',
                 cursor: 'default',
-                position: 'relative',
                 zIndex: 1000,
                 [theme.breakpoints.down('md')]: {
                     flexDirection: 'column',

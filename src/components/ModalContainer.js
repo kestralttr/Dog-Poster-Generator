@@ -84,7 +84,7 @@ const ModalContainer = ({
         if (!imagesList.length) {
             setModalActive(false)
         }
-    }, [imagesList])
+    }, [imagesList, setModalActive])
 
     return (
         <div className="modal__container">

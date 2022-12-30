@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, CardMedia, Link } from '@mui/material'
-import DogeImage from '../images/doge.png'
 
 const ImageCard = ({imageUrl}) => {
 

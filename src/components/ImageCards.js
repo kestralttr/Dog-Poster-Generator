@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react'
+import React from 'react'
 import { Box } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import ImageCard from './ImageCard'
