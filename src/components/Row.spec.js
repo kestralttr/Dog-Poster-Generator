@@ -54,16 +54,12 @@ describe(Row, () => {
     ]
     
     const server = setupServer(...handlers)
-    
     beforeAll(() => server.listen())
-    
     afterEach(() => {
         server.resetHandlers()
         cleanup()
     })
-    
     afterAll(() => server.close())
-
 
     it('renders a row', () => {
         const {getByTestId} = renderWithProviders(<Row {...fakeRowProps} />, {

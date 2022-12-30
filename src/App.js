@@ -112,7 +112,7 @@ const App = () => {
   const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchBreedsAndSubBreedsAsync('all'))
+        dispatch(fetchBreedsAndSubBreedsAsync())
     }, [dispatch])
 
   return (

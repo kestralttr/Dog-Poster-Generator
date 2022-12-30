@@ -25,17 +25,11 @@ describe('dog api request', () => {
     ]
 
     const server = setupServer(...handlers)
-    
-    // Enable API mocking before tests.
     beforeAll(() => server.listen())
-    
-    // Reset any runtime request handlers we may add during the tests.
     afterEach(() => {
         server.resetHandlers()
         cleanup()
     })
-    
-    // Disable API mocking after the tests are done.
     afterAll(() => server.close())
 
     it('should fetch a master breed list', async () => {

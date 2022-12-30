@@ -1,9 +1,8 @@
 import React from 'react'
 import { renderWithProviders } from '../redux/test-utils';
 import { initialState } from '../redux/reducers/dogSlice';
-import { act } from 'react-dom/test-utils';
 import userEvent from '@testing-library/user-event'
-import { render, screen, cleanup, waitFor, fireEvent, waitForElementToBeRemoved } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import ModalContainer from './ModalContainer';
 
 const fakeInitialStateWithImages = {

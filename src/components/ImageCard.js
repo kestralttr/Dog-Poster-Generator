@@ -11,7 +11,7 @@ const ImageCard = ({imageUrl}) => {
             >
                 <CardMedia
                     image={imageUrl}
-                    alt="A dog picture"
+                    alt="A picture of a dog"
                 />
             </Link>
         </Card>

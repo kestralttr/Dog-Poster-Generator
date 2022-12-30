@@ -1,23 +1,36 @@
-# Getting Started with Create React App and Redux
+# Dog Poster Generator
+Built by Alex Bennett
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Description
 
-## Available Scripts
+The Dog Poster Generator allows you to:
+- Choose breed/sub-breed combinations of dogs (some breeds have no sub-breeds available, in which case only a breed is selected).
+- See the total number of images available for that combination.
+- See a randomized assortment of the images available for that combination.
+- Add additional combinations of breeds/sub-breeds, each of which displays an image count and an option to see images associated with it.
+- A `Generate All` button which shows a randomized assortment of ALL images for ALL combinations present.
+- Clicking on any image will open a new tab with the full-sized version of that image.
 
-In the project directory, you can run:
+This app uses the following technologies and patterns:
+- React (functional components)
+- Global state via Redux
+- React Hooks (useState, useEffect)
+- React.Suspense (used in ModalContainer.js)
+- A higher-order component (withButtonFunctionality.js)
+- Material UI (with a custom theme found in App.js)
+- Extensive testing by way of Jest & React Testing Library
+- Responsive design across mobile & desktop
+
+## Instruction to run
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode.
+It should automatically open a browser window, but if not, navigate to [http://localhost:3000](http://localhost:3000) in a browser of your choice (although it works best on Chrome).
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the Jest tests for the entire application.
 
 ### `npm run build`
 
@@ -27,20 +40,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

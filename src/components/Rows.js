@@ -23,7 +23,6 @@ const Rows = () => {
     const [modalActive, setModalActive] = useState(false)
     const rowsData = useSelector(selectRowsData)
 
-
     const generateAllImages = () => {
         let newImagesList = []
         rowsData.forEach((rowData) => {
